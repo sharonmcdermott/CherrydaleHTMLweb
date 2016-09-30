@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+    <!-- (Navigation Bar) -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+			
+      <a class="navbar-brand" href="#">Cherrydale</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Flowers & Plants</a></li>
+        <li><a href="#">Great Views</a></li>
+        <li><a href="#">Map of Flowers & Plants</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+
+
+    </ol>
+
+    </div>
+
+<!-- Background Color -->
+<style>
+.jumbotron { 
+    background-color: #009688; /* Sea Green */
+    color: #fff;
+}
+</style>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Map of Cherrydale</h1> 
+    <p>Location of Flowers & Plants</p> 
+  </div>
+</body>
+
+<html>
+<body>
+<div id="map" style="width:100%;height:1134px;background:yellow">
+<div id="map">My map will go here</div>
+
+<!-- Roses and Daisies -->
+<script>
+	
+function myMap() {
+  var myCenter = new google.maps.LatLng(38.894639,-77.111172);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 16};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+ marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "Rose Garden & Purple Flowers!"
+  });
+  infowindow.open(map,marker);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
+</html>
+
+</div>
+</div>
+
+
+</body>
+</html>
