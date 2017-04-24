@@ -177,37 +177,75 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">03.10.2017 Dear Paul</a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+03.10.2017
+
+Hi Paul,
+
+I did some refining on what my Tic Tac Toe app is going to be. It is now going to be a single player game, where the user is "X" and to place the opponents "O", the user shakes the device, which places an "O" randomly in an available space. To Do this, I think I'll use an array of all the spots on the board, which gets appended according to all the pieces which have been placed on the board.
+
+Right now, there is no real strategy to where the "O" is placed. Just a random available spot. I currently have a label that indicates a winner. I need to get the label to indicate when there is a draw.  I also have a Restart button that appears when there is a winner and the user is able to restart the game.
+
+I have a field for the name of the user and a field for the name of the opponent.  I can get the keyboard to disappear by clicking anywhere outside the keyboard. The only problem is that the game board takes up most of the screen and you may accidentally place a piece when clicking outside the keyboard.  I think I need to bring up a transparent or even colored field overtop of the game when the keyboard comes up to give the user a place to click without placing a game piece and dismiss it with the keyboard.
+
+I have a label to track the score that I need to hook up.
+
+I also made sure I could get into my Apple developer account, since I hadn't been in it for months. It looks different now and it looks like Apple may have changed a few things. I started thinking about my key search words for the app.  I think I'll call it Tic Tac Shake with an icon that kind of looks like (( X ))
+
+I need to work on the stack views for my app.  I also need to hook up the app to a GitHub repository.  Just seems kind of silly when you are working on your own, but it's necessary.
+
+I met with Sarah ___ on Tuesday.  She is the iOS developer from Seattle that has been mentoring me. She suggested I use classes to keep track of the spaces on the board.  I'm trying to figure out how to incorporate that into my code.  Creating the classes will give me the flexibility down the line to re-use that code for other apps.
+
+Thursday I went to a ruby meetup where the speaker talked about going from being a hotel manager to being a Ruby developer. It kind of spoke to me because he was teaching himself and he talked about his goal setting process.
+
+He also talked about blogging, which I need to do. I'm not Natasha the Robot, but I could be. I already have a website that I made using Bootstrap and run off of GitHub. I can just take the maps tab and use it for blogging and announcing my apps in the App Store. (I'm writing to you each week, so maybe this becomes my blog.) You need a website to put an app in the App Store and this site already exists.  I just need to think of a way of incorporating it that makes sense, since my site is about images from my Cherrydale neighborhood and the flowers and plants in the neighborhood.
+
+I put in some extra hours at Starbucks to help my store manager. She helped me get an audience with the regional manager of Starbucks and his boss that were visiting our store. I was able to pitch them to ask if they can connect me with the iOS developers from Starbucks for more people to talk code with and maybe do an internal app for Starbucks partners. I have no idea if they can come through and connect me, but let's see what they come up with. What's the point of working for a really great company if you can't get some street-cred as a developer out of it?
+
+Hopefully I can wrap up this Tic Tac Toe app next week.
+
+Sharon
+				</div>
       </div>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">03.17.2017 Dear Paul</a>
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+03.17.2017 Hi Paul,
+I forgot to hit send this morning...
+I decided that having the Tic Tac Toe game rotate was a total waste of time, so I turned off landscape.  I did some work on stack views, since I was a little rusty. I was going to go to Sarah's to talk about using "classes", which will give me some code which will potentially be re-usable in other apps. Cancelled because of the snow, but will try to reschedule.
+Still have previously mentioned items to accomplish.
+Sharon</div>
       </div>
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">03.24.2017 Dear Paul</a>
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">Hi Paul,
+I created a project, AutoLayoutTest to test auto layout and was able to connect it to a repository on Github.  I decided to go for it and connect the Tic Tac Test project to GitHub. It looks like Github changed their page layout or something.  I was back and forth with their support desk and I’ll see if I can use what they suggested to make it hook up, so I can commit, push and pull from X-code.
+
+Since I created the project, I came up with the new name Tic Tac Shake.  My understanding is that it is pretty difficult to change the name after the fact. I'll need a plan.
+
+I've managed to update the header on the website with the name of the new tab, but I need to get it to navigate to the blog page. Once I get this working, I can create a tab for apps, so that I have a website to link to for my Apple developer account, so I can shop my app to test flight.
+
+I have the keyboard set, so that if you click anywhere, you can dismiss the keyboard. Only things is that if you click on a spot where you could place an “X” or an “O”, it places a piece instead of dismissing the keyboard.  I think I need to bring up a transparent view with a gesture recognizer in front of the game board while the keyboard is active and that view would dismiss when the keyboard dismissed.
+
+Sharon
+Sent from my iPhone
+				</div>
       </div>
     </div>
   </div> 
